@@ -10827,161 +10827,112 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
+body {
   font-family: "Raleway", sans-serif;
+  background-color: #d0d0ce;
+  min-height: 100vh;
 }
 
-.image {
-  width: 38rem;
-  height: 32rem;
-  border-radius: 3rem;
+.brand-wrapper {
+  margin-bottom: 19px;
+}
+.brand-wrapper .logo {
+  height: 37px;
 }
 
-.border-line {
-  border-right: 1px solid #EEEEEE;
+.login-card {
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden;
 }
-
-.facebook {
-  background-color: #3b5998;
-  color: #fff;
-  font-size: 18px;
-  padding-top: 5px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
-.twitter {
-  background-color: #1DA1F2;
-  color: #fff;
-  font-size: 18px;
-  padding-top: 5px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
-.linkedin {
-  background-color: #2867B2;
-  color: #fff;
-  font-size: 18px;
-  padding-top: 5px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
-.line {
-  height: 1px;
-  width: 45%;
-  background-color: #E0E0E0;
-  margin-top: 10px;
-}
-
-.or {
-  width: 10%;
-  font-weight: bold;
-}
-
-.text-sm {
-  font-size: 14px !important;
-}
-
-::-moz-placeholder {
-  color: #BDBDBD;
-  opacity: 1;
-  font-weight: 300;
-}
-
-:-ms-input-placeholder {
-  color: #BDBDBD;
-  opacity: 1;
-  font-weight: 300;
-}
-
-::placeholder {
-  color: #BDBDBD;
-  opacity: 1;
-  font-weight: 300;
-}
-
-:-ms-input-placeholder {
-  color: #BDBDBD;
-  font-weight: 300;
-}
-
-::-ms-input-placeholder {
-  color: #BDBDBD;
-  font-weight: 300;
-}
-
-.email-input, .password-input,
-textarea {
-  padding: 10px 12px 10px 12px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  margin-bottom: 5px;
-  margin-top: 2px;
+.login-card-img {
+  border-radius: 0;
+  position: absolute;
   width: 100%;
-  box-sizing: border-box;
-  color: #2C3E50;
-  font-size: 14px;
-  letter-spacing: 1px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.email-input, .password-input:focus,
-textarea:focus {
-  box-shadow: none !important;
-  border: 1px solid #304FFE;
-  outline-width: 0;
+.login-card .card-body {
+  padding: 85px 60px 60px;
 }
-
-button:focus {
-  box-shadow: none !important;
-  outline-width: 0;
+@media (max-width: 422px) {
+  .login-card .card-body {
+    padding: 35px 24px;
+  }
 }
-
-a {
-  color: inherit;
-  cursor: pointer;
+.login-card-description {
+  font-size: 25px;
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 23px;
 }
-
-.btn-blue {
-  background-color: #1A237E;
-  width: 150px;
-  color: #fff;
-  border-radius: 2px;
+.login-card form {
+  max-width: 326px;
 }
-
-.btn-blue:hover {
+.login-card .form-control {
+  border: 1px solid #d5dae2;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  min-height: 45px;
+  font-size: 13px;
+  font-weight: normal;
+}
+.login-card .form-control::-moz-placeholder {
+  color: #919aa3;
+}
+.login-card .form-control:-ms-input-placeholder {
+  color: #919aa3;
+}
+.login-card .form-control::placeholder {
+  color: #919aa3;
+}
+.login-card .login-btn {
+  padding: 13px 20px 12px;
   background-color: #000;
-  cursor: pointer;
-}
-
-.bg-blue {
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
   color: #fff;
-  background-color: #1A237E;
+  margin-bottom: 24px;
+}
+.login-card .login-btn:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.login-card .forgot-password-link {
+  font-size: 14px;
+  color: #919aa3;
+  margin-bottom: 12px;
+}
+.login-card-footer-text {
+  font-size: 16px;
+  color: #0d2366;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .login-card-footer-text {
+    margin-bottom: 24px;
+  }
+}
+.login-card-footer-nav a {
+  font-size: 14px;
+  color: #919aa3;
 }
 
-@media screen and (max-width: 991px) {
-  .logo {
-    margin-left: 0px;
-  }
+.footer-link {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
 
-  .image {
-    width: 28rem;
-    height: 24rem;
-  }
-
-  .border-line {
-    border-right: none;
-  }
-
-  .card2 {
-    border-top: 1px solid #EEEEEE !important;
-    margin: 0px 15px;
-  }
+.login-card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 100%;
 }
